@@ -1,0 +1,25 @@
+<ng-container *ngIf="order.length !=0">
+  <p>Order Successfull!</p>
+
+  <div class="container">
+    <h1>Order Details</h1>
+    <div class="order-info">
+      <p><strong>Order ID:</strong> {{order._id}}</p>
+      <p><strong>User ID:</strong> {{order.userId}}</p>
+      <p><strong>Address:</strong> {{order.address}}</p>
+      <p><strong>Status:</strong> {{order.status}}</p>
+
+    </div>
+
+    <div class="order-total">
+      <p><strong>Total Amount:</strong>{{order.amount}}</p>
+    </div>
+  </div>
+
+  <button (click)="emptycart()" routerLink="/" class="btn btn-primary">Shop Now</button>
+
+</ng-container>
+
+<ng-container *ngIf="order.length ==0">
+  <p>No Orders</p>
+</ng-container>

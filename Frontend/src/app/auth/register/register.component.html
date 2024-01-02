@@ -1,0 +1,22 @@
+<div class="body">
+    <h2>Signup Page</h2>
+    <br>
+    <div class="register">
+        <form id="login" method="post" action="/register">
+            <label><b>User Name </b> </label>
+            <input type="text" [(ngModel)]="newUser.username" name="username" id="username"
+                placeholder="Enter Your Name" required autocomplete="off">
+            <br /><br />
+            <label><b>Email <br /> </b>
+            </label>
+            <input type="email" [(ngModel)]="newUser.email" name="email" id="email" placeholder="Enter Your Email"
+                required>
+            <br /><br />
+            <label><b>Password </b> </label>
+            <input type="password" [(ngModel)]="newUser.password" name="password" id="password"
+                placeholder="Enter Your Password" required>
+            <br /><br />
+            <button class="submit-btn" type="submit" (click)="save()">Register</button>
+        </form>
+    </div>
+</div>

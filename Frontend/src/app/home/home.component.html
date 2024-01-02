@@ -1,0 +1,16 @@
+<br><br>
+<div *ngIf="filteredProducts && filteredProducts.length > 0" (click)="handleClick($event)" class="product-container">
+  <div *ngFor="let product of filteredProducts" class="product-card">
+    <!-- ... --><img [src]="product.image" alt="{{ product.title }}" class="product-image">
+    <div class="product-details">
+      <h3 class="product-name">{{ product.title }}</h3>
+      <p class="product-description">{{ product.description }}</p>
+      <p class="product-price">₹ {{ product.price }}/-</p>
+      <div class="product-info">
+        <p><strong>Categories:</strong> {{ product.category}}</p>
+        <!-- <p><strong>Size:</strong> {{ product.size }}</p>
+        <p><strong>Color:</strong> {{ product.color }}</p> -->
+      </div>
+      <button class="add-to-cart-btn" (click)=addtocart(product)>Add to Cart</button>
+    </div>
+  </div>

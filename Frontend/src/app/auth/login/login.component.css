@@ -1,0 +1,82 @@
+.body {
+  margin: 0;
+  padding: 0;
+  background-color: #C3E2C2;
+  font-family: "Arial";
+  padding-bottom: 28px;
+  border-radius: 1rem;
+}
+
+.login {
+  width: 382px;
+  overflow: hidden;
+  margin: auto;
+  margin: 20 0 0 450px;
+  padding: 80px;
+  background: #EAECCC;
+  border-radius: 15px;
+}
+
+h2 {
+  text-align: center;
+  color: #277582;
+  padding: 10px;
+  margin-top: 15px;
+}
+
+label {
+  color: #CD8D7A;
+  font-size: 17px;
+}
+
+#username {
+  width: 300px;
+  height: 30px;
+  border: none;
+  border-radius: 3px;
+  padding-left: 8px;
+}
+
+#password {
+  width: 300px;
+  height: 30px;
+  border: none;
+  border-radius: 3px;
+  padding-left: 8px;
+}
+
+#email {
+  width: 300px;
+  height: 30px;
+  border: none;
+  border-radius: 3px;
+  padding-left: 8px;
+}
+
+.submit-btn {
+  width: 300px;
+  height: 30px;
+  border: none;
+  border-radius: 17px;
+  padding-left: 7px;
+  color: black;
+}
+
+button:hover {
+  background-color: #3559E0;
+  color: white;
+}
+
+a {
+  float: right;
+  color: #CD8D7A;
+}
+
+a:hover {
+  color: #3559E0;
+}
+
+p {
+  align-items: center;
+  display: flex;
+}
